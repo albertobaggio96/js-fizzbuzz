@@ -12,14 +12,14 @@ for(let i = 1; i <= 100; i ++){
   }else if (i % 3 === 0){
     console.log("Fizz");
     myNumber = "Fizz";
-    color = "blue"
+    color = "blue";
   }else if (i % 5 === 0){
     console.log("Buzz");
     myNumber = "Buzz";
-    color = "green"
+    color = "green";
   }
 
-  sectionElement.innerHTML+= `<div class="${color}">${myNumber}</div>`
+  sectionElement.innerHTML+= `<div class="${color}">${myNumber}</div>`;
 }
 
 
