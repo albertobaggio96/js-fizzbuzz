@@ -16,7 +16,17 @@ for(let i = 1; i <= 100; i ++){
     myNumber = i
   }
 
-  sectionElement.append(myNumber) 
+  // sectionElement.innerHTML+= `<div>${myNumber}</div>`
+
+  if (myNumber=== "FizzBuzz"){
+    sectionElement.innerHTML+= `<div class="red">${myNumber}</div>`
+  } else if (myNumber === "Fizz"){
+    sectionElement.innerHTML+= `<div class="blue">${myNumber}</div>`
+  } else if (myNumber === "Buzz"){
+    sectionElement.innerHTML+= `<div class="green">${myNumber}</div>`
+  } else {
+    sectionElement.innerHTML+= `<div>${myNumber}</div>`
+  }
 }
 
 
